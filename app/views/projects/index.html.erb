@@ -1,3 +1,11 @@
-<% @projects.each do |p|%>
-<li><%= p %></li>
-<%end%>
+<% @projects.each do |p| %>
+  <br>
+
+    <li>Title <%= p.name %></li>
+    <li>Description <%= p.description %></li>
+    <li>Total Pledge Amount <%= p.target_pledge_amount %></li>
+    <li>Created At <%= p.created_at %></li>
+    <li>Updated At <%= p.updated_at %></li>
+
+  <%end%>
+
